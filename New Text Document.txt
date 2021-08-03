@@ -1,0 +1,24 @@
+<?php
+  $name = $_POST['name'];
+  $mobno = $_POST['mobno'];
+  $email = $_POST['email'];
+  $donation = $_POST['donation'];
+  $d=implode('&',$donation);
+  $date = $_POST['date'];
+  $msg = $_POST['msg'];
+
+  $conn = new mysqli('localhost','root','','mydb');
+  if($conn->connect_error){
+    die('CONNECTION FAILED :' .$conn->connect_error);
+  }
+  else{
+   $stmt = $conn->prepare("insert into form(name, mobno, email, donation, date, msg)
+     values(?,?,?,?,?,?)");
+     $stmt->bind_param("sissss", $name, $mobno, $email, $d, $date, $msg);
+     $stmt->execute();
+     echo "THANK YOU ";
+    
+     $stmt->close(); 
+     $conn->close();
+  }
+?>

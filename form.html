@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="stylesheet" href="/css/form.css">
+        
+    </head>
+     <body> 
+        <div class="navbar">
+            <div class="container">
+                <a href="#" class="logo"><span>S</span>ondhangal</a>
+                <img id="mobile-cta" class="mobile-menu" src="/Images/menu-icon.svg" alt="Open Menu">
+                <nav>
+                    <img class="mobile-menu-exit" id="mobile-exit" src="/Images/close.svg" alt="Close Menu">
+                    <ul class="primary-nav">
+                        <li class="current"><a href="/index.html">Home</a></li>
+                        <li><a href="/cont.html">Contact</a></li>
+                        
+                    </ul>
+                    <ul class="secondary-nav">
+                        <li><a href="/login.html">Login</a></li>
+                        <li><a href="/sign.html">Signup</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-left">
+                    <!--<center><h1 name="trustname">MANITHAM ORGANISATION</h1></center> -->
+                    <h2>Fill this form to Contribute</h2>
+                    <form action="form.php" method="post">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required="required">
+                        <label for="mob-no">Mobile</label>
+                        <input type="number" name="mob-no" id="mob-no" required="required">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required="required">
+                        <h3>I am donating</h3>
+                        <div class="cb">
+                            <input type="checkbox" name="donation[]" id="food" value="food"> 
+                            <label for="food">Food</label><br>
+                            <input type="checkbox" name="donation[]" id="acc" value="acc">
+                            <label for="acc">Accessories</label><br>
+                            <input type="checkbox" name="donation[]" id="donation" value="Money">
+                            <label for="Money">Money</label>
+                        </div>
+                        <label for="date">Date <span>(Fill only if you are planning to Contribute food)</span></label>
+                        <input type="date" name="date" id="date" required="required">
+                        <label for="message">Your message</label>
+                        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                        <input type="submit" class="send-message-cta" value="Send message" name="submit" id="">
+                    </form>
+                </div>
+            </div>
+        </section>
+          
+        
+
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+    <body>
+<html>

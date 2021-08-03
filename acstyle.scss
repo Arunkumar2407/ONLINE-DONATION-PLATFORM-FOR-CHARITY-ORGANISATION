@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');
+
+:root{
+    --primary-color:rgb(23, 77, 228)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.table-box
+{
+    margin: 50px auto;
+    
+}
+
+.table-row{
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: transparent;
+    padding: 12px 0;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
+}
+.table-head{
+    background: #8665f7;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 600;
+}
+.table-head .table-cell{
+    border-right: none;
+}
+.table-cell{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+}
+.first-cell{
+    text-align: left;
+    padding-left: 10px;
+}
+.last-cell{
+    border-right: none;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+@media only screen and (max-width: 600px) {
+  .table-row {
+    font-size: 11px;
+  }
+}
+
+body {
+    margin: 0;
+    font-family: 'Baloo Chettan 2';
+  }
+  
+  .pic {
+    margin: auto;
+    width: 70%;
+    display: block;
+    position: relative;
+    top: 28px;
+  }
+  
+  .navbar {
+    background: white;
+    padding: 1em;
+  }
+  
+  .navbar .logo {
+    text-decoration: none;
+    font-weight:normal;
+    color: #0d1016;
+    font-size: 2.3em;
+    padding-bottom: .14em;
+  }
+  
+  .navbar .logo span {
+    color: var(--primary-color);
+    font-size: 1em;
+  }
+  
+  .navbar nav {
+    display: none;
+  }
+  
+  .navbar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: space-between;
+  }
+  
+  .navbar .mobile-menu {
+    cursor: pointer;
+  }
+  
+  .navbar .mobile-menu:hover {
+    background: rgba(4, 85, 160, 0.133);
+    border-radius: .9em;
+  }
+  
+  a {
+    color: #161414;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  section {
+    padding: 5em 2em;
+  }
+  
+  .hero {
+    text-align: center;
+  }
+  
+  .left-col .subhead {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    letter-spacing: .3em;
+  }
+  
+  .left-col h1 {
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin-top: .2em;
+  }
+  
+  .left-col .primary-cta {
+    background: var(--primary-color);
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 0.28em .6em;
+    font-size: 1.4em;
+    border-radius: .5em;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .left-col .primary-cta:hover {
+    background: blanchedalmond;
+    color: var(--primary-color);
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+  }
+  
+  input:hover {
+    background: blanchedalmond;
+    color: var(--primary-color);
+    font-family: 'Baloo Chettan 2';
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid gray;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .send-message-cta {
+    background: var(--primary-color);
+    padding: 0.5em 1.5em;
+    font-size: 1.3em;
+    border-radius: 5em;
+    width: unset;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  nav.menu-btn {
+    display: block;
+  }
+  
+  nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: #235789;
+    height: 100vh;
+    padding: 1em;
+  }
+  
+  nav ul.primary-nav {
+    margin-top: 5em;
+  }
+  
+  nav li a {
+    color: blanchedalmond;
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+    font-size: 1.3em;
+    text-align: right;
+  }
+  
+  nav li a:hover {
+    font-weight: bold;
+    color: #161718;
+  }
+  
+  .mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+  }
+  
+  .mobile-menu-exit:hover {
+    background: blanchedalmond;
+    border-radius: .99em;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .mobile-menu, .mobile-menu-exit {
+      display: none;
+    }
+    .navbar .container {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 180px auto;
+          grid-template-columns: 180px auto;
+    }
+    .navbar nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      background: none;
+      position: unset;
+      height: auto;
+      width: 100%;
+      padding: 0;
+    }
+    .navbar nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    .navbar nav a {
+      color: black;
+      font-size: 1.6em;
+      padding: .1em 1em;
+    }
+    .navbar nav ul.primary-nav {
+      margin: 0;
+    }
+  }
+  
+  @media only screen and (min-width: 1080px) {
+    .container {
+      width: 1080px;
+      margin: 0 auto;
+    }
+  }

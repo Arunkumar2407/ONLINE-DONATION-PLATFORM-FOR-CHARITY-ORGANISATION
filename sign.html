@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first Web Page</title>
+	<link rel="stylesheet" type="text/css" href="/css/sign.css">
+</head>
+<body>
+<div id="header">
+	<!--<center><h1>HOME TRUST</h1></center>-->
+</div>
+<div class="navbar">
+	<div class="container">
+		<a href="#" class="logo"><span>S</span>ondhangal</a>
+		<img id="mobile-cta" class="mobile-menu" src="/Images/menu-icon.svg" alt="Open Menu">
+		<nav>
+			<img class="mobile-menu-exit" id="mobile-exit" src="/Images/close.svg" alt="Close Menu">
+			<ul class="primary-nav">
+				<li class="current"><a href="/index.html">Home</a></li>
+				<li><a href="#">Contact</a></li>
+				
+			</ul>
+			<ul class="secondary-nav">
+				<li><a href="/login.html">Login</a></li>
+				<li class="c"><a href="sign.html">Signup</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+	
+	   <form class="sub" action="signup.php" method="post">
+	  	<h1>Registration</h1>
+		<input type="text" name="firstname"  placeholder="Firstname" required=""><br>
+		<input type="text" name="lastname"  placeholder="Lastname" required=""><br>
+		<input type="email" name="Email"  placeholder="Email"><br>
+		<input type="phone" name="phoneno" placeholder="Phone Number" required=""><br>
+        <input type="password" name="password" placeholder="Password" required=""><br>
+        <!--<input type="password" name="confirmpassword"   placeholder="Confirm Password" required=""><br>-->
+        <input type="submit" name="submit" value="SignUp" placeholder="SignUp"><br>
+        <a href="login.html" id="dha">Already have a account?</a>
+
+	  </form>
+
+<div id="footer"></div>
+</body>
+</html>
