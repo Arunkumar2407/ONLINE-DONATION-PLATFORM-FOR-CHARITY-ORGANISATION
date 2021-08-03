@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');
+
+:root{
+    --primary-color:rgb(23, 77, 228)
+}
+body{
+    background-image:url(sub.jpeg);
+	background: linear-gradient(120deg,#2980b9,#8e44ad);
+    margin: 0;
+    font-family: 'Baloo Chettan 2';
+}
+
+.pic{
+    margin: auto;
+    width: 70% ;
+    display: block;
+    position: relative;
+    top:28px;
+}
+.navbar {
+    background: white;
+    padding : 1em;
+     
+    .logo{
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(13, 16, 22);
+        font-size: 2.3em;
+        padding-bottom: .14em;
+        span{
+            color: var(--primary-color);
+            font-size: 1em;
+        }
+    }
+
+    form:focus{
+        transition: .5s;
+    }
+
+    nav{
+        display: none;
+    }
+    
+    .container{
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu{
+        cursor: pointer;
+
+        &:hover{
+            background:rgba(4, 85, 160, 0.133);
+            border-radius: .9em;
+        }
+    }
+}
+
+a{
+    color: rgb(22, 20, 20);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cb{
+    padding: 1em 2em;
+    padding-left: 14em;
+    white-space: nowrap;
+    display:flex;
+    padding-right: 10px;
+}
+
+
+section{
+    padding-bottom: 2em;
+    h3{
+        color: white;
+        padding-left: 25em;
+        background: black;
+    }
+}
+
+.hero{
+    text-align: center;
+}
+
+.left-col{
+    .subhead{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: black;
+        letter-spacing: .3em;
+    }
+
+    h1{
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+    }
+
+    .primary-cta{
+        background: var(--primary-color);
+        color: blanchedalmond;
+        text-decoration: none;
+        padding: 0.28em .6em;
+        font-size: 1.4em;
+        border-radius: .5em;
+        font-weight: bold;
+        display: inline-block ;
+
+        &:hover{
+            background: blanchedalmond;
+            color:var(--primary-color)
+        }
+    }
+
+    .watch-video-cta{
+        display: block;
+        margin-top: 1em;
+        text-decoration: none;
+        &:hover{
+            color:var(--primary-color)
+        }
+    }
+}
+
+form{
+    font-weight: bolder;
+}
+
+h2{
+    font-size: 2em;
+}
+
+label{
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+    span{
+        font-weight:bolder;
+    }
+}
+
+input{
+    &:hover{
+        background: blanchedalmond;
+        color:var(--primary-color);
+        font-family: 'Baloo Chettan 2';
+    }
+}
+
+input, textarea{
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border:1px solid gray;
+    box-sizing: border-box;
+}
+
+.send-message-cta{
+    background: var(--primary-color);
+    padding: 0.5em 1.5em;
+    font-size: 1.3em;
+    border-radius:5em;
+    width: unset;
+    cursor: pointer;
+    display: inline-block ;
+}
+
+nav.menu-btn{
+    display: block;
+}
+
+nav{
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: #235789;
+    height: 100vh;
+    padding: 1em;
+
+    ul.primary-nav{
+        margin-top:5em;
+    }
+
+    li{
+        a{
+            color: blanchedalmond;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: right;
+
+            &:hover{
+                font-weight: bold;
+                color: #161718;
+            }
+        }
+    }
+}
+
+.mobile-menu-exit{
+    float: right;
+    margin: .5em;
+    cursor:pointer;
+    &:hover{
+        background: blanchedalmond;
+        border-radius: .99em;
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+    .mobile-menu,.mobile-menu-exit{
+        display: none;
+    }
+
+    .navbar .container{
+        display: grid;
+        grid-template-columns: 180px auto;
+    }
+
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul{
+            display: flex;
+        }
+        a{
+            color: black;
+            font-size: 1.6em;
+            padding: .1em 1em;
+        }
+        ul.primary-nav{
+            margin:0;
+        }
+
+      
+    }
+}
+@media only screen and (min-width: 1080px){
+    .container{ //remove this if center not satisfied
+        width: 1080px;
+        margin : 0 auto;
+    }
+}
+ 
+
+
+
